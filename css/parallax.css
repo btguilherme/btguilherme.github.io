@@ -1,0 +1,35 @@
+#parallaxBanner{
+    height: 700px;
+    background-color:#004c82;
+    background: url(../img/banner-1.png) 50% 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#parallaxEducation{
+    height:450px;
+    background-color:#004c82;
+    background: url(../img/education.jpg) 50% 0 fixed;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#parallaxWork{
+    height:450px;
+    background-color:#004c82;
+    background: url(../img/work.jpg) 50% 0 fixed;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#parallaxProjects{
+    height:450px;
+    background-color:#004c82;
+    background: url(../img/projects.jpg) 50% 0 fixed;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size:cover;
+}

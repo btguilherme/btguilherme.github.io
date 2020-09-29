@@ -1,9 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html style="scroll-behavior: smooth;">
 <head>
-	<title>Main page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/parallax.css">
+	<link rel="stylesheet" type="text/css" href="css/social.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<title>Guilherme Camargo</title>
 </head>
 <body>
-<h1>Under construction!</h1>
+
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">
+		<a class="navbar-brand" href="#">HOME</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+			</button>
+		<div class="navbar-nav-scroll" id="navbarSupportedContent">
+			<ul class="navbar-nav bd-navbar-nav flex-row">
+				<li class="nav-item active"><a class="nav-link" href="#education">EDUCATION</a></li>
+				<li class="nav-item active"><a class="nav-link" href="#work">WORK</a></li>
+				<li class="nav-item active"><a class="nav-link" href="#projects">PROJECTS</a></li>
+				<li class="nav-item active"><a class="nav-link" href="#contact">CONTACT</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+<main>
+<!-- 	<img src="img/banner-1.png" id="parallaxBanner">
+		<p></p>
+	</img> -->
+	<section id="parallaxBanner" style="margin-bottom: 50px;">
+		<h1 style="color: #000000; font-family: 'Sofia';" class="row h-75 justify-content-center align-items-center">
+			Guilherme Camargo|
+			<small class="text-muted"> Welcome!</small>
+		</h1>
+	</section>
+
+	<section id="parallaxEducation" data-speed="6" data-type="background"></section>
+	<section class="p-5 mb-5 bg-white rounded w-75 mx-auto">
+		<h1 class="pt-5" id="education">EDUCATION</h1>
+			<ul>
+				<li>Master of Science in Bioinformatics, Federal University of Technology – Parana (<a href="http://portal.utfpr.edu.br/cursos/coordenacoes/stricto-sensu/ppgbioinfo/ppgmodelo" class="alert-link" target="_blank">PPGBIOINFO - UTFPR</a>). Cornélio Procópio - PR, Brazil. Concluded in 2018. <img src="img/Utfpr.gif" height="10px"> <img src="img/logo-ppgbioinfo.png" height="20px"></li>
+				<li>Bachelor of Science in Computer Engineering, Federal University of Technology – Parana (<a href="http://portal.utfpr.edu.br/cursos/coordenacoes/graduacao/cornelio-procopio/cp-engenharia-de-computacao" class="alert-link" target="_blank">DACOM - UTFPR</a>). Cornélio Procópio - PR, Brazil. Concluded in 2015. <img src="img/Utfpr.gif" height="10px">
+				</li>
+			</ul>
+	</section>
+
+	<section id="parallaxWork" data-speed="6" data-type="background"></section>
+	<section class="p-3 mb-5 bg-white rounded w-75 mx-auto">
+		<h1 class="pt-5" id="work">WORK</h1>
+			<ul>
+				<li>Data Scientist/Software Engineer</li>
+				<p>2020 to present : <a href="http://www.solpe.com.br/" class="alert-link" target="_blank">SOLPE</a></p>
+				<li>Technical Training</li>
+				<p>2019 to 2020: <a href="http://www.solpe.com.br/" class="alert-link" target="_blank">SOLPE</a></p>
+				<li>Undergraduate research project</li>
+				<p>2013 to 2015: <a href="http://www.fappr.pr.gov.br/" class="alert-link" target="_blank">Fundação Araucária</a> <img src="img/fundacao-araucaria.jpg" height="20px"></p>
+			</ul>
+	</section>
+
+	<section id="parallaxProjects" data-speed="6" data-type="background"></section>
+	<section class="p-3 mb-5 bg-white rounded w-75 mx-auto">
+		<h1 class="pt-5" id="projects">PROJECTS</h1>
+			<ul>
+				<li><a href="http://www.solpe.com.br/" class="alert-link" target="_blank">CRM</a></li>
+				<li><a href="http://www.solpe.com.br/" class="alert-link" target="_blank">RockS</a></li>
+				<li><a href="https://github.com/btguilherme/FASSL" class="alert-link" target="_blank">FASSL</a></li>
+				<p>Effective and efficient active semi-supervised learning framework, including a new active learning strategy for biological context.</p>
+				<li><a href="http://paginapessoal.utfpr.edu.br/vagnerrigo/vagner-alexandre-rigo/surfun" class="alert-link" target="_blank">SurFun</a></li>
+				<p>SurFun is a software that allows you to construct, in an easy, fast and systematic way, atomistic geometries of functionalized nanoparticles with any functional groups informed by the user.</p>
+			</ul>
+	</section>
+
+	<section class="shadow p-3 mb-5 bg-white rounded w-75 mx-auto">
+		<h1 id="contact">CONTACT</h1>
+		<form class="form-group col-md-6" action="https://formspree.io/xwkwpvzo" method="POST">
+			<input type="text" class="form-control" placeholder="Name" name="name" /><br>
+			<input type="email" class="form-control" placeholder="E-mail" name="email" /><br>
+			<textarea cols="40" class="form-control" rows="5" placeholder="Message" name="message"></textarea><br>
+			<input type="submit" value="Send" class="btn btn-primary"/>
+		</form>
+	</section>
+</main>
+
+<footer class="p-3">
+	<a href="https://www.facebook.com/btguilherme" class="fa fa-linkedin" target="_blank"></a>
+	<a href="https://www.facebook.com/btguilherme" class="fa fa-facebook" target="_blank"></a>
+	<a href="https://twitter.com/HeyEllOWeRr" class="fa fa-twitter" target="_blank"></a>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/parallax.js"></script>
 </body>
 </html>
